@@ -15,7 +15,8 @@ Run program in CLI by ```python 8_vk_friends_online.py``` and enter your VK logi
 
 # Example of Script Launch
 
-```Your VK login: @mail.ru
+```
+Your VK login: @mail.ru
 Your VK password:
 
 Now online:
@@ -39,6 +40,6 @@ Timur Khasanov
 Roman Sugrobov
 Marina Kharkova```
 
-#Project Goals
+# Project Goals
 
 The code is written for educational purposes. Training course for web-developers - DEVMAN.org
