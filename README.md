@@ -38,7 +38,8 @@ Dmitry Vetrov
 Evgeny Tarasov
 Timur Khasanov
 Roman Sugrobov
-Marina Kharkova```
+Marina Kharkova
+```
 
 # Project Goals
 
