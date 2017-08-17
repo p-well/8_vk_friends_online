@@ -3,10 +3,10 @@ import getpass
 import settings
 
 def get_user_login():
-    return input('Your VK login: ')
+    return input('\nYour VK login: ')
 
 def get_user_password():
-    return getpass.getpass('\nYour VK password: ')
+    return getpass.getpass('Your VK password: ')
 
 def get_online_friends(login, password):
     session = vk.AuthSession(
@@ -28,5 +28,9 @@ def output_friends_to_console(friends_online):
 if __name__ == '__main__':
     login = get_user_login()
     password = get_user_password()
-    online_friends_name_lastname = get_online_friends(login, password)
-    output_friends_to_console(online_friends_name_lastname)
+    try:
+        online_friends_name_lastname = get_online_friends(login, password)
+    except vk.exceptions.VkAuthError:
+        online_friends_name_lastname = False
+    if online_friends_name_lastname:
+        output_friends_to_console(online_friends_name_lastname)
